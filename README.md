@@ -3,7 +3,7 @@ Official repository for "MOPG-7", featuring Google Colab training pipelines and 
 # MOPG-7 — Multi-Clinic Panoramic Radiograph Object Detection Benchmark
 
 This repository contains the official evaluation code, hyperparameter logs, and technical validation benchmarks for the **MOPG-7 Dataset**, as presented in our manuscript:  
-> **"MOPG-7 — A multi-clinic dataset of 2,095 dental panoramic radiographs with expert bounding-box labels for object detection"** (Submitted to *Scientific Reports*)
+> **"MOPG-7: A multi-clinic dataset of dental panoramic radiographs with bounding-box labels"** (Submitted to *Scientific Data*)
 
 ---
 
@@ -108,9 +108,9 @@ The pipeline code, configurations, and evaluation assets in this repository are 
 
 ```bibtex
 @article{mopg7_2026,
-  title={MOPG-7 — A multi-clinic dataset of 2,095 dental panoramic radiographs with expert bounding-box labels for object detection},
+  title={MOPG-7 — A multi-clinic dataset of dental panoramic radiographs with expert bounding-box labels for object detection},
   author={Faiza, et al.},
-  journal={Scientific Reports},
+  journal={Scientific Data},
   year={2026},
   publisher={Nature Portfolio}
 }
