@@ -67,14 +67,14 @@ mopg7-object-detection/
 ---
 
 ## 🏷️ Class Mapping & Clinical Annotation Matrix
-The regional bounding box labels generated via `labelIMG` map 7 specialized dental conditions balancing active pathologies with historical post-treatment restorations:
-*   `0`: Impacted Wisdom
-*   `1`: Missing Teeth
-*   `2`: Filling
-*   `3`: Root Canal with Filling
-*   `4`: Root Canal with Dental Crown
-*   `5`: Root Canal
-*   `6`: Broken down
+The regional bounding box labels generated via `labelIMG` map 7 specialized dental conditions corresponding to the exact sequence defined in `classes.txt`:
+*   `0`: Missing Teeth
+*   `1`: Dental Crown
+*   `2`: Root Canal
+*   `3`: Caries
+*   `4`: Broken Down Teeth
+*   `5`: Wisdom Teeth
+*   `6`: Healthy Teeth
 
 ---
 
