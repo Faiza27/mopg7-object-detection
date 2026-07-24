@@ -23,7 +23,7 @@ mopg7-object-detection/
 ├── configs/
 │   └── data.yaml             # YOLO configuration file mapping the 7 classes
 └── output/                   
-    └── sa_yolov8m/           # Native YOLO run folder (Repeat for v9 / v11)
+    └── sa_yolov8m/           # Native YOLO run folder 
         ├── args.yaml         # Training hyperparameters and logging constraints
         ├── results.csv       # Epoch-by-epoch tracking metrics (Loss, mAP)
         ├── results.png       # Plotted optimization training curves
@@ -36,6 +36,32 @@ mopg7-object-detection/
         └── weights/          
             ├── best.pt       # Top-performing checkpoint weights for evaluation
             └── last.pt       # Final training epoch checkpoint weights
+    └── sa_yolov10m/           # Native YOLO run folder 
+            ├── args.yaml         # Training hyperparameters and logging constraints
+            ├── results.csv       # Epoch-by-epoch tracking metrics (Loss, mAP)
+            ├── results.png       # Plotted optimization training curves
+            ├── confusion_matrix_normalized.png # Normalized multi-class error matrix
+            ├── BoxPR_curve.png   # Precision-Recall curve across all classes
+            ├── labels.jpg        # Spatial anchor dataset distribution profile
+            ├── train_batch*.jpg  # Visual logging of augmentation training batches
+            ├── val_batch*_labels.jpg # Expert clinical ground-truth bounding boxes
+            ├── val_batch*_pred.jpg   # Trained model inference validation previews
+            └── weights/          
+                ├── best.pt       # Top-performing checkpoint weights for evaluation
+                └── last.pt       # Final training epoch checkpoint weights
+    └── sa_yolov11m/           # Native YOLO run folder 
+            ├── args.yaml         # Training hyperparameters and logging constraints
+            ├── results.csv       # Epoch-by-epoch tracking metrics (Loss, mAP)
+            ├── results.png       # Plotted optimization training curves
+            ├── confusion_matrix_normalized.png # Normalized multi-class error matrix
+            ├── BoxPR_curve.png   # Precision-Recall curve across all classes
+            ├── labels.jpg        # Spatial anchor dataset distribution profile
+            ├── train_batch*.jpg  # Visual logging of augmentation training batches
+            ├── val_batch*_labels.jpg # Expert clinical ground-truth bounding boxes
+            ├── val_batch*_pred.jpg   # Trained model inference validation previews
+            └── weights/          
+                ├── best.pt       # Top-performing checkpoint weights for evaluation
+                └── last.pt       # Final training epoch checkpoint weights
 ```
 
 ---
@@ -72,8 +98,8 @@ The regional bounding box labels generated via `labelIMG` map 7 specialized dent
 | Architecture | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 |
 | :--- | :--- | :--- | :--- | :--- |
 | **YOLOv8m** | *[0.XX]* | *[0.XX]* | *[0.XX]* | *[0.XX]* |
-| **YOLOv9** | *[0.XX]* | *[0.XX]* | *[0.XX]* | *[0.XX]* |
-| **YOLOv11** | *[0.XX]* | *[0.XX]* | *[0.XX]* | *[0.XX]* |
+| **YOLOv10m** | *[0.XX]* | *[0.XX]* | *[0.XX]* | *[0.XX]* |
+| **YOLOv11m** | *[0.XX]* | *[0.XX]* | *[0.XX]* | *[0.XX]* |
 
 *(Note: Please fill in the placeholder `[0.XX]` values using the top scores recorded in your respective `results.csv` files).*
 
