@@ -97,11 +97,9 @@ The regional bounding box labels generated via `labelIMG` map 7 specialized dent
 
 | Architecture | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 |
 | :--- | :--- | :--- | :--- | :--- |
-| **YOLOv8m** | *[0.XX]* | *[0.XX]* | *[0.XX]* | *[0.XX]* |
-| **YOLOv10m** | *[0.XX]* | *[0.XX]* | *[0.XX]* | *[0.XX]* |
-| **YOLOv11m** | *[0.XX]* | *[0.XX]* | *[0.XX]* | *[0.XX]* |
-
-*(Note: Please fill in the placeholder `[0.XX]` values using the top scores recorded in your respective `results.csv` files).*
+| **YOLOv8m** | *0.727* | *0.758* | *0.759* | *[0.359* |
+| **YOLOv10m** | *0.727* | *0.758* | *0.759* | *0.359* |
+| **YOLOv11m** | *0.746* | *0.764* | *0.769* | *0.368* |
 
 ---
 
