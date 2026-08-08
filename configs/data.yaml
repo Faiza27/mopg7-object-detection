@@ -1,6 +1,9 @@
 path: /content/Data_split
 train: images/train
 val: images/val
+test: images/test
+
+nc: 7
 names:
   0: Missing
   1: Dental Crown
