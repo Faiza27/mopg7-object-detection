@@ -13,7 +13,7 @@ cache: false
 device: '0'
 workers: 8
 project: runs/scale_adaptive
-name: sa_yolov8
+name: sa_yolov82
 exist_ok: false
 pretrained: true
 optimizer: auto
@@ -105,4 +105,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: botsort.yaml
-save_dir: /content/runs/detect/runs/scale_adaptive/sa_yolov8
+save_dir: /content/runs/detect/runs/scale_adaptive/sa_yolov82
