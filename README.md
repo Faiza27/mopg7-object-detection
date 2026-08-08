@@ -93,13 +93,14 @@ The regional bounding box labels generated via `labelIMG` map 7 specialized dent
 ---
 
 ## 📊 Technical Validation Baseline Metrics
-*The performance metrics below represent the baseline validation profiles across a strict, patient-stratified 70:10:20 dataset split to eliminate data leakage:*
+*The performance metrics below represent the baseline validation profiles across a strict, patient-stratified 80:10:10 dataset split to eliminate data leakage:*
 
-| Architecture | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 |
-| :--- | :--- | :--- | :--- | :--- |
-| **YOLOv8m** | *0.727* | *0.758* | *0.759* | *0.359* |
-| **YOLOv10m** | *0.727* | *0.758* | *0.759* | *0.359* |
-| **YOLOv11m** | *0.746* | *0.764* | *0.769* | *0.368* |
+
+| Architecture | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 | Inference Latency |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **YOLOv8m** | **0.719** | 0.706 | **0.729** | 0.333 | **1.9 ms** |
+| **YOLOv10m** | 0.660 | **0.742** | 0.724 | **0.344** | 3.4 ms |
+| **YOLOv11m** | 0.709 | 0.716 | 0.717 | 0.335 | 4.2 ms |
 
 ---
 
