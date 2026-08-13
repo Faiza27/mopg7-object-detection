@@ -1,6 +1,6 @@
 # mopg7-object-detection
 Official repository for "MOPG-7", featuring Google Colab training pipelines and validation benchmarks (YOLOv8, YOLOv9, YOLOv11) for multi-clinic dental panoramic radiograph object detection.
-# MOPG-7 — Multi-Clinic Panoramic Radiograph Object Detection Benchmark 
+# MOPG-7 — Multi-Clinic Panoramic Radiograph Object Detection Benchmark  
 
 This repository contains the official evaluation code, hyperparameter logs, and technical validation benchmarks for the **MOPG-7 Dataset**, as presented in our manuscript:  
 > **"MOPG-7: A multi-clinic dataset of dental panoramic radiographs with bounding-box labels"** (Submitted to *Scientific Data*)
