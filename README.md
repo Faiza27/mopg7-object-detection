@@ -9,7 +9,7 @@ Official repository for **MOPG-7**, providing reproducible YOLO-based object det
 **2,095** anonymized high-resolution dental panoramic radiographs with **7-class bounding-box annotations**.
 
 Dataset:
-https://data.mendeley.com/preview/r43v452t29?a=c468fdbf-7def-4d6c-8374-8793fe5f9efe
+https://data.mendeley.com/datasets/r43v452t29/3
 
 ---
 
