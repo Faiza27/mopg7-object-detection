@@ -114,7 +114,7 @@ The notebook includes annotation validation, one-to-one Hungarian matching, full
 
 ```bibtex
 @article{mopg7_2026,
-  title={MOPG-7 — A multi-clinic dataset of dental panoramic radiographs with expert bounding-box labels for object detection},
+  title={A multi-clinic dental panoramic radiograph dataset with expert labels for six conditions and healthy cases},
   author={Faiza, et al.},
   journal={Scientific Data},
   year={2026},
