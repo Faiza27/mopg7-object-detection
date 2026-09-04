@@ -110,6 +110,29 @@ The notebook includes annotation validation, one-to-one Hungarian matching, full
 
 ---
 
+
+
+## 💻 Software and Hardware Environment
+
+The dataset analysis, annotation, and baseline experiments were conducted using the following software environment:
+
+| Component | Version |
+|---|---|
+| Python | 3.11.1 |
+| LabelImg | 1.8.1 |
+| NumPy | 2.1.3 |
+| PyTorch | 2.11.0+cu128 |
+| Pandas | 2.2.3 |
+| SciPy | 1.16.3 |
+| Pillow | 11.3.0 |
+| tqdm | 4.67.3 |
+| Matplotlib | 3.10.0 |
+| Seaborn | 0.13.2 |
+| scikit-learn | 1.6.1 |
+| Ultralytics | 8.4.0 |
+| Operating System | Windows 11 Pro |
+
+
 ## 📌 Citation
 
 ```bibtex
