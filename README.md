@@ -57,6 +57,49 @@ Results use a **patient-stratified 80:10:10 split** to minimize data leakage.
 
 ---
 
+---
+
+## 🔬 Inter-Annotator Agreement (IAA)
+
+An independent inter-annotator agreement (IAA) analysis was performed on **419 OPG images (20.0% of the complete dataset)** to assess annotation consistency between two clinical annotators.
+
+The analysis evaluated all seven bounding-box classes using **Intersection over Union (IoU)**. One-to-one spatial correspondence between annotations was established using the Hungarian assignment algorithm, with an IoU threshold of **0.50**. Unmatched annotations were retained in the analysis and assigned an IoU of 0 for the full-data agreement calculation. Class-level agreement was evaluated for spatially corresponding annotations, while unmatched annotations were treated as disagreements. :contentReference[oaicite:1]{index=1}
+
+### IAA Summary
+
+| Metric | Result |
+|---|---:|
+| IAA subset | 419 OPG images (20.0%) |
+| Dr. Jinia bounding boxes | 1,879 |
+| Dr. Afrina bounding boxes | 1,923 |
+| Total bounding boxes | 3,802 |
+| Matched bounding-box pairs | 1,854 |
+| Total unmatched boxes | 94 |
+| IoU ≥ 0.50 (all boxes) | **97.53% (3,708/3,802)** |
+| IoU < 0.50 (all boxes) | **2.47% (94/3,802)** |
+| IoU ≥ 0.80 (all boxes) | **95.63% (3,636/3,802)** |
+| IoU < 0.80 (all boxes) | **4.37% (166/3,802)** |
+| Mean IoU (all boxes) | **0.8941** |
+| Median IoU | **0.9224** |
+| Class agreement (all boxes) | **97.00%** |
+| Macro Precision (7 classes) | **0.9580** |
+| Macro Recall (7 classes) | **0.9843** |
+| Macro F1-score (7 classes) | **0.9704** |
+| Disagreement records | **104** |
+| Images requiring clinical review | **57** |
+| Quality-control issue records | **18** |
+| Duplicate bounding-box pairs | **0** |
+
+The analysis identified **94 unmatched bounding boxes** and **10 class-level disagreements among spatially matched pairs**, resulting in **104 disagreement records** across the 419-image subset. A total of **57 OPG images** contained at least one disagreement and were identified for clinical review. :contentReference[oaicite:2]{index=2}
+
+### IAA Notebook
+
+The complete reproducible IAA analysis is available in:
+
+👉 **[`IAA_Report.ipynb`](IAA_Report.ipynb)**
+
+The notebook includes annotation validation, one-to-one Hungarian matching, full-data IoU analysis, threshold comparison, class-level agreement analysis, unmatched-box analysis, disagreement identification, and quality-control checks.
+
 ## 🚀 Reproduction
 
 1. Open `mopg7_validation.ipynb` in **Google Colab**
