@@ -53,7 +53,7 @@ Each model folder contains training logs, evaluation plots, validation visualiza
 | YOLOv10m |     0.660 | **0.742** |     0.724 |    **0.344** |     3.4 ms |
 | YOLOv11m |     0.709 |     0.716 |     0.717 |        0.335 |     4.2 ms |
 
-Results use a **patient-stratified 80:10:10 split** to minimize data leakage.
+Results use a **80:10:10 split** to minimize data leakage.
 
 ---
 
