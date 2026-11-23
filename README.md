@@ -6,7 +6,7 @@ Official repository for **MOPG-7**, providing reproducible YOLO-based object det
 
 ## 📦 Dataset
 
-**2,095** anonymized high-resolution dental panoramic radiographs with **7-class bounding-box annotations**.
+**1.941** anonymized high-resolution dental panoramic radiographs with **7-class bounding-box annotations**.
 
 Dataset:
 https://data.mendeley.com/datasets/r43v452t29/3
@@ -23,7 +23,7 @@ https://data.mendeley.com/datasets/r43v452t29/3
 |   3 | Caries            |
 |   4 | Broken Down Teeth |
 |   5 | Wisdom Teeth      |
-|   6 | Healthy Teeth     |
+|   6 | No Target Findings     |
 
 ---
 
@@ -49,9 +49,9 @@ Each model folder contains training logs, evaluation plots, validation visualiza
 
 | Model    | Precision |    Recall |   mAP@0.5 | mAP@0.5:0.95 |    Latency |
 | -------- | --------: | --------: | --------: | -----------: | ---------: |
-| YOLOv8m  | **0.719** |     0.706 | **0.729** |        0.333 | **1.9 ms** |
-| YOLOv10m |     0.660 | **0.742** |     0.724 |    **0.344** |     3.4 ms |
-| YOLOv11m |     0.709 |     0.716 |     0.717 |        0.335 |     4.2 ms |
+| YOLOv8m  |     0.679 | **0.744** | **0.705** |    **0.325** |     2.0 ms |
+| YOLOv10m |     0.667 |     0.668 |     0.661 |        0.306 | **0.6 ms** |
+| YOLOv11m | **0.714** |     0.686 |     0.691 |        0.296 |     3.1 ms |
 
 Results use a **80:10:10 split** to minimize data leakage.
 
@@ -66,30 +66,32 @@ The analysis evaluated all seven bounding-box classes using **Intersection over 
 
 ### IAA Summary
 
+
 | Metric | Result |
 |---|---:|
-| IAA subset | 419 OPG images (20.0%) |
-| Dr. Jinia bounding boxes | 1,879 |
-| Dr. Afrina bounding boxes | 1,923 |
-| Total bounding boxes | 3,802 |
-| Matched bounding-box pairs | 1,854 |
-| Total unmatched boxes | 94 |
-| IoU ≥ 0.50 (all boxes) | **97.53% (3,708/3,802)** |
-| IoU < 0.50 (all boxes) | **2.47% (94/3,802)** |
-| IoU ≥ 0.80 (all boxes) | **95.63% (3,636/3,802)** |
-| IoU < 0.80 (all boxes) | **4.37% (166/3,802)** |
-| Mean IoU (all boxes) | **0.8941** |
-| Median IoU | **0.9224** |
-| Class agreement (all boxes) | **97.00%** |
-| Macro Precision (7 classes) | **0.9580** |
-| Macro Recall (7 classes) | **0.9843** |
-| Macro F1-score (7 classes) | **0.9704** |
-| Disagreement records | **104** |
-| Images requiring clinical review | **57** |
-| Quality-control issue records | **18** |
-| Duplicate bounding-box pairs | **0** |
+| IAA subset | 390 OPG images |
+| Dr. Jinia bounding boxes | 1,840 |
+| Dr. Afrina bounding boxes | 1,884 |
+| Total bounding boxes | 3,724 |
+| Matched bounding-box pairs | 1,816 |
+| Total unmatched boxes | 92 |
+| IoU ≥ 0.50 (all boxes) | **97.53% (3,632/3,724)** |
+| IoU < 0.50 (all boxes) | **2.47% (92/3,724)** |
+| IoU ≥ 0.75 (all boxes) | **97.21% (3,620/3,724)** |
+| IoU < 0.75 (all boxes) | **2.79% (104/3,724)** |
+| Mean IoU (all boxes) | **0.8933** |
+| Median IoU | **0.9219** |
+| Class agreement (all boxes) | **96.99%** |
+| Macro Precision (7 classes) | **0.9605** |
+| Macro Recall (7 classes) | **0.9848** |
+| Macro F1-score (7 classes) | **0.9719** |
+| Disagreement records | **112** |
+| Images requiring clinical review | 56 |
+| Quality-control issue records | 16 |
+| Duplicate bounding-box pairs | 0 |
 
-The analysis identified **94 unmatched bounding boxes** and **10 class-level disagreements among spatially matched pairs**, resulting in **104 disagreement records** across the 419-image subset. A total of **57 OPG images** contained at least one disagreement and were identified for clinical review. :contentReference[oaicite:2]{index=2}
+
+The analysis identified **92 unmatched bounding boxes** and **10 class-level disagreements among spatially matched pairs**, resulting in **102 disagreement records** across the 390-image subset. A total of **56 OPG images** contained at least one disagreement and were identified for clinical review. :contentReference[oaicite:2]{index=2}
 
 ### IAA Notebook
 
