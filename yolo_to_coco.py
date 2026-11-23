@@ -1,4 +1,5 @@
 """
+Author: Md. Tanvir Hasan
 YOLO to COCO Annotation Converter for MOPG-7 Dataset
 Converts YOLO .txt bounding boxes to COCO JSON format.
 Generates:
