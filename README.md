@@ -103,11 +103,11 @@ The notebook includes annotation validation, one-to-one Hungarian matching, full
 
 ## 🚀 Reproduction
 
-1. Open `mopg7_validation.ipynb` in **Google Colab**
+1. Open `MOPG_7_validation_yolo_v11&v10.ipynb` or `MOPG_7_validation_yolo_v8.ipynb` in **Google Colab**
 2. Enable GPU runtime
 3. Install **Ultralytics YOLO** dependencies
 4. Configure the dataset in `configs/data.yaml`
-5. Run the training and evaluation pipeline
+5. Run the validation pipeline to reproduce the evaluation results
 
 ---
 
