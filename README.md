@@ -77,15 +77,15 @@ The analysis evaluated all seven bounding-box classes using **Intersection over 
 | Total unmatched boxes | 92 |
 | IoU ≥ 0.50 (all boxes) | **97.53% (3,632/3,724)** |
 | IoU < 0.50 (all boxes) | **2.47% (92/3,724)** |
-| IoU ≥ 0.75 (all boxes) | **97.21% (3,620/3,724)** |
-| IoU < 0.75 (all boxes) | **2.79% (104/3,724)** |
+| IoU ≥ 0.80 (all boxes) | **95.60% (3,560/3,724)** |
+| IoU < 0.80 (all boxes) | **4.40% (164/3,724)** |
 | Mean IoU (all boxes) | **0.8933** |
 | Median IoU | **0.9219** |
 | Class agreement (all boxes) | **96.99%** |
 | Macro Precision (7 classes) | **0.9605** |
 | Macro Recall (7 classes) | **0.9848** |
 | Macro F1-score (7 classes) | **0.9719** |
-| Disagreement records | **112** |
+| Disagreement records | **102** |
 | Images requiring clinical review | 56 |
 | Quality-control issue records | 16 |
 | Duplicate bounding-box pairs | 0 |
