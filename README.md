@@ -1,6 +1,6 @@
 # Multi-clinic dental panoramic radiograph dataset with expert labels for six conditions and no target findings
 
-Official repository for **MOPG-7**, providing reproducible YOLO-based object detection benchmarks for multi-clinic dental panoramic radiographs.
+Official repository for MOPG-7, providing reproducible YOLO-based object detection benchmarks for multi-clinic dental panoramic radiographs. It includes a **No Target Findings** class, represented by a single bounding box covering the entire dentition in images without target dental conditions.
 
 ---
 
