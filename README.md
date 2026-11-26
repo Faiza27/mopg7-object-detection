@@ -31,14 +31,26 @@ https://data.mendeley.com/datasets/24wytrvtcz
 
 ```text
 mopg7-object-detection/
-├── README.md
-├── mopg7_validation.ipynb
+│
 ├── configs/
-│   └── data.yaml
-└── output/
-    ├── sa_yolov8m/
-    ├── sa_yolov10m/
-    └── sa_yolov11m/
+│   ├── data.yaml
+│
+├── output/
+│   ├── sa_yolov8/
+│   ├── sa_yolov10m/
+│   └── sa_yolov11m/
+│
+├── IAA_Report.ipynb
+│
+├── MOPG_7_validation_yolo_v11&v10.ipynb
+│
+├── MOPG_7_validation_yolo_v8.ipynb
+│
+├── yolo_to_coco.py
+│
+├── LICENSE
+│
+└── README.md
 ```
 
 Each model folder contains training logs, evaluation plots, validation visualizations, and `best.pt` / `last.pt` checkpoints.
