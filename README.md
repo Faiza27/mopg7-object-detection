@@ -74,7 +74,7 @@ Results use a **80:10:10 split** to minimize data leakage.
 
 An independent inter-annotator agreement (IAA) analysis was performed on **390 OPG images (20.0% of the complete dataset)** to assess annotation consistency between two clinical annotators.
 
-The analysis evaluated all seven bounding-box classes using **Intersection over Union (IoU)**. One-to-one spatial correspondence between annotations was established using the Hungarian assignment algorithm, with an IoU threshold of **0.50**. Unmatched annotations were retained in the analysis and assigned an IoU of 0 for the full-data agreement calculation. Class-level agreement was evaluated for spatially corresponding annotations, while unmatched annotations were treated as disagreements. :contentReference[oaicite:1]{index=1}
+The analysis evaluated all seven bounding-box classes using **Intersection over Union (IoU)**. One-to-one spatial correspondence between annotations was established using the Hungarian assignment algorithm, with an IoU threshold of **0.50**. Unmatched annotations were retained in the analysis and assigned an IoU of 0 for the full-data agreement calculation. Class-level agreement was evaluated for spatially corresponding annotations, while unmatched annotations were treated as disagreements. 
 
 ### IAA Summary
 
@@ -103,7 +103,7 @@ The analysis evaluated all seven bounding-box classes using **Intersection over 
 | Duplicate bounding-box pairs | 0 |
 
 
-The analysis identified **92 unmatched bounding boxes** and **10 class-level disagreements among spatially matched pairs**, resulting in **102 disagreement records** across the 390-image subset. A total of **56 OPG images** contained at least one disagreement and were identified for clinical review. :contentReference[oaicite:2]{index=2}
+The analysis identified **92 unmatched bounding boxes** and **10 class-level disagreements among spatially matched pairs**, resulting in **102 disagreement records** across the 390-image subset. A total of **56 OPG images** contained at least one disagreement and were identified for clinical review.
 
 ### IAA Notebook
 
@@ -151,7 +151,7 @@ The dataset analysis, annotation, and baseline experiments were conducted using 
 ```bibtex
 @article{mopg7_2026,
   title={Multi-clinic dental panoramic radiograph dataset with expert labels for six conditions and no target findings},
-  author={Feroz, F., Hasan, M.~T., Samapti, E.~T., Hasan, M.~T., Partho, S.~S., Talukder, J., Chowdhury, A., Hasan, M.~Z., Bijoy, M.~H.~I., \& Samad, M.~A.,},
+  author={Feroz, F., Hasan, M.~T., Samapti, E.~T., Hasan, M.~T., Partho, S.~S., Talukder, J., Parvin, C.~A., Hasan, M.~Z., Bijoy, M.~H.~I., \& Samad, M.~A.,},
   journal={Scientific Data},
   year={2026},
   publisher={Nature Portfolio}
