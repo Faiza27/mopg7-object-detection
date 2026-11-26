@@ -150,4 +150,4 @@ The dataset analysis, annotation, and baseline experiments were conducted using 
 
 ## 📄 License
 
-Released under the **MIT License**.
+Released under the **CC0 1.0**.
