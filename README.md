@@ -139,7 +139,7 @@ The dataset analysis, annotation, and baseline experiments were conducted using 
 ```bibtex
 @article{mopg7_2026,
   title={Multi-clinic dental panoramic radiograph dataset with expert labels for six conditions and no target findings},
-  author={Feroz, F., Hasan, M.~T., Samapti, E.~T., Hasan, M.~T., Partho, S.~S., Talukder, Z., Chowdhury, A., Hasan, M.~Z., Bijoy, M.~H.~I., \& Samad, M.~A.,},
+  author={Feroz, F., Hasan, M.~T., Samapti, E.~T., Hasan, M.~T., Partho, S.~S., Talukder, J., Chowdhury, A., Hasan, M.~Z., Bijoy, M.~H.~I., \& Samad, M.~A.,},
   journal={Scientific Data},
   year={2026},
   publisher={Nature Portfolio}
